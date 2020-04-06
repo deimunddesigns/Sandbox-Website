@@ -1,9 +1,9 @@
 html {
-  box-sizing: border-box; }
-
-/* Makes for easy rem measurements, 1rem = 10px */
-body {
+  box-sizing: border-box;
   font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -11,9 +11,6 @@ body {
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0; }
-
-ol, ul {
-  list-style: none; }
 
 /* Make images responsive by default */
 img {
