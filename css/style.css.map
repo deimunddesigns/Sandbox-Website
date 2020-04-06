@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA;;;;;;;;;;;;;EAaE;ACRF,qBAAqB;ACLrB,IAAK;EACH,UAAU,EAAE,UAAU;EACtB,SAAS,EAAC,KAAK;;AAGjB,IAAK;EACH,SAAS,EAAE,MAAM;;AAGnB,oBAAqB;EACnB,UAAU,EAAE,OAAO;;AAGrB,6CAA8C;EAC5C,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;;AAGZ,uCAAuC;AACvC,GAAI;EACF,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,IAAI;;ADbd,sBAAsB",
-"sources": ["scss/base/_wordpress.scss","scss/style.scss","scss/base/_normalize.scss"],
-"names": [],
-"file": "style.css"
-}
