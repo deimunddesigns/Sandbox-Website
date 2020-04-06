@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAK;EACH,UAAU,EAAE,UAAU;;AAGxB,kDAAkD;AAClD,IAAK;EACH,SAAS,EAAC,KAAK;;AAGjB,oBAAqB;EACnB,UAAU,EAAE,OAAO;;AAGrB,uCAAwC;EACtC,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;;AAGZ,MAAO;EACL,UAAU,EAAE,IAAI;;AAGlB,uCAAuC;AACvC,GAAI;EACF,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,IAAI",
+"sources": ["scss/base/_normalize.scss"],
+"names": [],
+"file": "style.css"
+}
