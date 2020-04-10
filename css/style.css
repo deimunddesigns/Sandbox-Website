@@ -3,32 +3,225 @@ Theme Name: Sandbox
 Theme URI: https://github.com/deimunddesigns/Sandbox-Website
 Author: Aaron Deimund
 Author URI: DeimundDesigns.net
-Description: Theme for learning and experimenting.
+Description:
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: 
-Tags: 
+Tags:
 */
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+/* smartphones, Android phones, landscape iPhone */
+/* portrait tablets, portrait iPad, landscape 800x480 phones (Android) */
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+/* big landscape tablets, laptops, and desktops */
+/* hi-res laptops and desktops */
+/************
+* Normalize *
+************/
+html, body {
+  width: 100%;
+  height: 100%; }
 
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
 
-/**** Site-wide variables ****/
-@import "abstract/variables.css";
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  background-color: #e6e5c5;
+  color: #444; }
 
-/**** Other Abstract Rules ****/
+*, *:before, *:after {
+  box-sizing: inherit; }
 
-/**** Base Rules ****/
-@import "base/normalize.css";
-@import "base/typography.css";
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0; }
 
-/**** Components ****/
-@import "components/header.css";
-@import "components/navigation.css";
+/* Make images responsive by default */
+img {
+  max-width: 100%;
+  height: auto; }
 
-/**** Layout Rules ****/
-@import "layout/grid.css";
-@import "layout/hero.css";
+a {
+  text-decoration: none;
+  color: #b3621c; }
 
-/**** Vendor Style Sheets ****/
+a:hover {
+  text-decoration: underline;
+  color: #444; }
 
-/**** User Specified Rules ****/
+/*************
+* Components *
+*************/
+/* Navigation */
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative; }
+  nav #primary-navigation {
+    border-radius: 3px;
+    border-top: 5px solid #c9bb9f;
+    background-color: #e6e5c5;
+    list-style-type: none;
+    top: 100%;
+    transition: all .25s;
+    transition-timing-function: ease-in-out; }
+  nav .menu-item {
+    margin: .5rem 1rem;
+    text-align: right;
+    font-size: 200%; }
+
+/* Hamburger Menu */
+.bar1, .bar2, .bar3 {
+  width: 21px;
+  height: 1px;
+  background-color: #b3621c;
+  margin: 6px 0;
+  transition: 0.4s; }
+  @media (min-width: 480px) {
+    .bar1, .bar2, .bar3 {
+      width: 27px;
+      height: 2px;
+      margin: 9px 4px; } }
+
+#primary-navigation-button {
+  border-color: #b3621c;
+  background-color: transparent;
+  outline-color: #b3621c;
+  border: 2px solid;
+  border-color: #b3621c;
+  border-radius: 3px;
+  color: #b3621c;
+  width: 37px;
+  margin: 1rem; }
+  @media (min-width: 480px) {
+    #primary-navigation-button {
+      height: 50px;
+      width: 50px; } }
+
+/**** Animation for the hamburger menu. ****/
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+  transform: rotate(-45deg) translate(-5px, 5px); }
+  @media (min-width: 480px) {
+    .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-8px, 8px);
+      transform: rotate(-45deg) translate(-8px, 9px); } }
+
+.change .bar2 {
+  opacity: 0; }
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -5px);
+  transform: rotate(45deg) translate(-5px, -5px); }
+  @media (min-width: 480px) {
+    .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-7px, -8px); } }
+
+/**********
+* Layouts *
+**********/
+/* Grid Rules */
+.grid-container {
+  display: grid; }
+
+#site-main {
+  min-height: 100%;
+  overflow: hidden;
+  grid-template-rows: auto 1fr auto; }
+
+header {
+  grid-template-columns: auto auto; }
+
+.hero {
+  display: grid;
+  grid-template-rows: auto auto; }
+
+.hero .image-container {
+  grid-row-start: 1; }
+
+/* Hero Layout */
+.hero {
+  border-bottom: 5px solid #c9bb9f;
+  background-position: bottom;
+  background-image: url("../../images/Header2.jpg");
+  background-size: cover;
+  padding-bottom: 2rem; }
+  .hero .tagline {
+    font-size: 3rem; }
+  .hero .content {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center; }
+  .hero .image-container {
+    padding: 3rem;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 0 auto; }
+  .hero img {
+    border: 5px solid #c9bb9f;
+    border-radius: 50%; }
+
+/* Front Page Sections */
+.front-page-section {
+  margin: 2rem 0;
+  padding: 3rem; }
+  .front-page-section h1 {
+    font-size: 200%;
+    text-align: center;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #444;
+    border-top: 1px solid #444; }
+  .front-page-section .image-container {
+    width: 100%; }
+  .front-page-section .content-container {
+    margin-top: 3rem; }
+
+/* Header */
+header {
+  background-color: #ffffdd;
+  border-bottom: 5px solid #c9bb9f; }
+  header .logo {
+    color: #b3621c;
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 1rem; }
+
+/* Main */
+main {
+  border-bottom: 5px solid #c9bb9f; }
+
+/* Footer */
+footer {
+  padding: 1rem;
+  background-color: #444;
+  color: #e6e5c5;
+  grid-template-columns: auto 1fr auto; }
+
+/*********
+* Vendor *
+*********/
+/************
+* Modifiers *
+************/
+.hide-right {
+  position: absolute;
+  right: -300%; }
+
+.show-right {
+  position: absolute;
+  right: 0; }
+
+/*******
+* User *
+*******/
+
+/*# sourceMappingURL=style.css.map */

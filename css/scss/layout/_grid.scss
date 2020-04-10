@@ -1,0 +1,23 @@
+.grid-container{
+  display: grid;
+  
+}
+
+#site-main{
+  min-height: 100%;
+  overflow: hidden;
+  grid-template-rows: auto 1fr auto;
+}
+
+header{
+  grid-template-columns: auto auto;
+}
+
+.hero{
+  display: grid;
+  grid-template-rows: auto auto ;
+}
+
+.hero .image-container{
+  grid-row-start: 1;
+}

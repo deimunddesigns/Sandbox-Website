@@ -1,0 +1,51 @@
+.bar1, .bar2, .bar3 {
+  width: 21px;
+  height: 1px;
+  background-color: $secondary-text-color;
+  margin: 6px 0;
+  transition: 0.4s;
+  @include xs-up{
+    width: 27px;
+    height: 2px;
+    margin: 9px 4px;
+  }
+}
+
+#primary-navigation-button {
+  border-color: $secondary-text-color;
+  background-color: transparent;
+  outline-color: $secondary-text-color;
+  border: 2px solid;
+  border-color: $secondary-text-color;
+  border-radius: 3px;
+  color: $secondary-text-color;
+  width: 37px;
+  margin: 1rem;
+  @include xs-up{
+      height: 50px;
+      width: 50px;
+  }
+}
+
+/**** Animation for the hamburger menu. ****/
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+  transform: rotate(-45deg) translate(-5px, 5px);
+  @include xs-up{
+    -webkit-transform: rotate(-45deg) translate(-8px, 8px);
+    transform: rotate(-45deg) translate(-8px, 9px);
+  }
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -5px);
+  transform: rotate(45deg) translate(-5px, -5px);
+  @include xs-up{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-7px, -8px);
+  }
+}

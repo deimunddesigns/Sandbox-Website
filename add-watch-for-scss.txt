@@ -1,0 +1,2 @@
+FROM THE ROOT FOLDER of the project type in terminal:
+sass --watch css/scss:css

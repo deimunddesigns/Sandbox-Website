@@ -1,0 +1,33 @@
+.hero{
+  border-bottom: $primary-border;
+  background-position: bottom;
+  background-image: url("../../images/Header2.jpg");
+  background-size: cover;
+  padding-bottom: 2rem;
+  
+  .tagline{
+    font-size: 3rem;
+  }
+  
+  .content{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .image-container{
+    padding: 3rem;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  img{
+    border: $primary-border;
+    border-radius: 50%;
+  }
+}
+
+

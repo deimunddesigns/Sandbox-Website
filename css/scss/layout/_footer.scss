@@ -1,0 +1,6 @@
+footer{
+  padding: 1rem;
+  background-color: $footer-bg-color;
+  color: $footer-text-color;
+  grid-template-columns: auto 1fr auto;
+}
