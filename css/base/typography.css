@@ -1,3 +1,18 @@
 em{
   color: var(--secondary-text-color);
 }
+
+a {
+  transition: color .4s;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+a:hover{  
+  color: var(--secondary-text-color-hover);
+  text-decoration: underline;
+}
+
+button:focus,
+a:focus {
+  outline-color: var(--secondary-text-color); }

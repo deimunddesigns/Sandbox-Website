@@ -1,8 +1,14 @@
 :root{
-  --primary-bg-color: #1f1f1f;
-  --primary-text-color: #bfbfbf;
-  --secondary-text-color: #e07a05;
+  --primary-bg-color: #e6e5c5;
+  --primary-border-color: #c9bb9f;
+  --primary-text-color: #444;
+  
+  --primary-border: 5px solid var(--primary-border-color);
+  
+  --secondary-bg-color: rgb(255, 255, 221);
+  
+  
+  --secondary-text-color: #b3621c;
+  --secondary-text-color-hover: var(--primary-text-color);
 
-  --blue: #627da0;
-  --green: #5b8054;
 }

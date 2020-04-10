@@ -1,0 +1,22 @@
+@import "button.css";
+
+nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.primary-navigation{
+  list-style-type: none;
+  display: none;
+}
+
+.menu-item{
+  display: inline;
+  float: right;
+  margin: .5rem;
+}
+
+.logo{
+  margin: 1rem;
+}

@@ -22,9 +22,12 @@ Tags:
 @import "base/typography.css";
 
 /**** Components ****/
-@import "components/boxes.css";
+@import "components/header.css";
+@import "components/navigation.css";
 
 /**** Layout Rules ****/
+@import "layout/grid.css";
+@import "layout/hero.css";
 
 /**** Vendor Style Sheets ****/
 
