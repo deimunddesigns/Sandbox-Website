@@ -1,7 +1,7 @@
 .hero{
   border-bottom: $primary-border;
   background-position: bottom;
-  background-image: url("../../images/Header2.jpg");
+  background-image: url("../images/Header2.jpg");
   background-size: cover;
   padding-bottom: 2rem;
   
@@ -16,6 +16,9 @@
     justify-content: center;
     margin: 0 auto;
     text-align: center;
+    @include sm-up{
+      text-align: right;
+    }
   }
   
   .image-container{
@@ -23,6 +26,16 @@
     min-width: 300px;
     max-width: 500px;
     margin: 0 auto;
+    @include xs-up{
+      padding:4rem;
+    }
+    @include sm-up{
+      padding:3rem;
+    }
+
+    @include md-up{
+      padding:4rem;
+    }
   }
   img{
     border: $primary-border;

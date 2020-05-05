@@ -1,11 +1,14 @@
 header{
   background-color: $secondary-bg-color;
   border-bottom: $primary-border;
+  position:sticky;
+  top:0;
 
   .logo{
-    color: $secondary-text-color;
-    text-decoration: none;
-    font-size: 3rem;
+    width: 200px;
     padding: 1rem;
+    @include md-up{
+      width: 300px;
+    }
   }
 }

@@ -1,7 +1,7 @@
 function addNavigationButtonEvent(){
   const navButton = document.getElementById("primary-navigation-button");
   const navMenuContainer = document.getElementById("primary-nav-container");
-  const navMenu = document.getElementById("menu-main-navigation");
+  const navMenu = document.getElementById("primary-navigation");
   const delay = getTransitionDelay();
   
   navButton.addEventListener("click", () => {

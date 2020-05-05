@@ -1,9 +1,24 @@
 .hide-right{
   position: absolute;
-  right: -300%;
+  right: -60%;
+  @include sm-up{
+    position: inherit;
+    right: inherit;
+  }
 }
 
 .show-right{
   position: absolute;
   right: 0;
+  @include sm-up{
+    position: inherit;
+    right: inherit;
+  }
+}
+
+.hidden-mobile{
+  display: none;
+  @include sm-up{
+    display: inherit;
+  }
 }

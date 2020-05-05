@@ -1,39 +1,33 @@
-/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 @mixin xxs-up {
   @media (min-width:360px) {
     @content;
   }
 }
 
-/* smartphones, Android phones, landscape iPhone */
 @mixin xs-up {
   @media (min-width:480px) {
     @content;
   }
 }
 
-/* portrait tablets, portrait iPad, landscape 800x480 phones (Android) */
 @mixin sm-up {
   @media (min-width:600px) {
     @content;
   }
 }
 
-/* tablet, landscape iPad, lo-res laptops ands desktops */
 @mixin md-up {
   @media (min-width:800px) {
     @content;
   }
 }
 
-/* big landscape tablets, laptops, and desktops */
 @mixin lg-up {
   @media (min-width:1025px) {
     @content;
   }
 }
 
-/* hi-res laptops and desktops */
 @mixin xl-up {
   @media (min-width:1280px) {
     @content;

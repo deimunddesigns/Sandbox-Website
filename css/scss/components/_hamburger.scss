@@ -1,15 +1,3 @@
-.bar1, .bar2, .bar3 {
-  width: 21px;
-  height: 1px;
-  background-color: $secondary-text-color;
-  margin: 6px 0;
-  transition: 0.4s;
-  @include xs-up{
-    width: 27px;
-    height: 2px;
-    margin: 9px 4px;
-  }
-}
 
 #primary-navigation-button {
   border-color: $secondary-text-color;
@@ -19,11 +7,27 @@
   border-color: $secondary-text-color;
   border-radius: 3px;
   color: $secondary-text-color;
+  height: 37px;
   width: 37px;
   margin: 1rem;
   @include xs-up{
-      height: 50px;
-      width: 50px;
+    height: 50px;
+    width: 50px;
+  }
+  @include sm-up{
+    display: none;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 21px;
+    height: 1px;
+    background-color: $secondary-text-color;
+    margin: 6px 0;
+    transition: 0.4s;
+    @include xs-up{
+      width: 27px;
+      height: 2px;
+      margin: 9px 4px;
+    }
   }
 }
 
